@@ -76,7 +76,9 @@
                 })
                 .then(response => response.text()) // Obtener la respuesta en formato de texto
                 .then(habitantes => {
-                    document.querySelector('#habitantes_pais').innerHTML = `Total de habitantes: ${habitantes}`;
+                    document.querySelector('#habitantes_pais').innerHTML = `
+                        <span class='fw-bold'>Total de habitantes:</span>
+                        <span class='fw-bold text-success' style='font-size: 30px;'> ${habitantes}</span>`;
                 })
                 .catch(error => console.error('Error:', error));
         }
