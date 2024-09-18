@@ -31,7 +31,7 @@ CREATE TABLE `capitales` (
   `id_capital` int NOT NULL,
   `nombre_capital` varchar(50) DEFAULT NULL,
   `id_pais` int DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `capitales`
@@ -60,7 +60,7 @@ INSERT INTO `capitales` (`id_capital`, `nombre_capital`, `id_pais`) VALUES
 CREATE TABLE `paises` (
   `id_pais` int NOT NULL,
   `nombre_pais` varchar(50) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `paises`
@@ -89,7 +89,7 @@ INSERT INTO `paises` (`id_pais`, `nombre_pais`) VALUES
 CREATE TABLE `poblacion_pais` (
   `id_pais` int NOT NULL,
   `habitantes` int DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `poblacion_pais`
